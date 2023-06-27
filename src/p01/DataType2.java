@@ -1,14 +1,14 @@
 package p01;
-import java.util.Scanner; // 임포트해야 함
+import java.util.Scanner;
 // 참조형
 
 public class DataType2 {
 	public static void main(String[] args) {
 		String str = "1234";
 		System.out.println(str.length());
-		System.out.println(str.substring(1));
-		System.out.println(str.substring(1,3));
-		System.out.println(str.indexOf("3"));
+		System.out.println(str.substring(1)); // 1번 인덱스부터 끝까지 출력
+		System.out.println(str.substring(1,3)); // 1번 인덱스부터 (3-1)인덱스까지 출력
+		System.out.println(str.indexOf("3")); //3이 있는 인덱스를 출력
 		int idx = str.indexOf("3");
 		System.out.println("3의 index : " + idx);
 		idx = str.indexOf("5");

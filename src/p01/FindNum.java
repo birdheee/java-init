@@ -7,7 +7,7 @@ public class FindNum {
 
 	public static void main(String[] args) {
 		Random ra = new Random();
-		int rNum = ra.nextInt(3) + 1;
+		int rNum = ra.nextInt(3) + 1; // 1부터 3까지 난수 생성
 		Scanner scan = new Scanner(System.in);
 		for(int i=1; i<=3; i++) {
 			System.out.println("맞출 숫자를 입력 : ");

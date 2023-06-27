@@ -18,15 +18,15 @@ public class StringCondition {
 		
 		
 		String s3 = "";
-		System.out.println(s3.equals(" "));
+		System.out.println(s3.equals(" ")); // false
 		
 		// trim은 공백을 지움
 		String s4 = "	123";
-		System.out.println(s4.trim().equals("123"));
+		System.out.println(s4.trim().equals("123")); // true
 		
 		String s5 = new String("1");
-		System.out.println("1".equals(s5)); // 이 방법을 추천
-		System.out.println(s5.equals("1"));
+		System.out.println("1".equals(s5)); // true, 이 방법을 추천함
+		System.out.println(s5.equals("1")); // true
 	}
 
 }

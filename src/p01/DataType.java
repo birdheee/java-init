@@ -1,5 +1,5 @@
 package p01;
-// 원시형
+// 원시형(기본형) 데이터
 
 public class DataType {
 

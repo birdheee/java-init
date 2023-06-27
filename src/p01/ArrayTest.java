@@ -1,5 +1,5 @@
 package p01;
-// 배열(list)
+// 배열(list)의 단점은 무조건 방 개수를 알려줘야 한다는 것. 실무에서는 list를 쓸 일이 거의 없음
 
 public class ArrayTest {
 	public static void main(String[] args) {
@@ -12,5 +12,3 @@ public class ArrayTest {
 		System.out.println(lotto[5]);
 	}
 }
-
-// 단점. 무조건 방 개수를 알려줘야 함, 실무에서 list를 쓸 일이 거이 없음

@@ -10,21 +10,21 @@ public class StringTest {
 		
 		String s1 = "1";
 		String s2 = "1";
-		System.out.println(s1 == s2); // 메모리 주소가 같다
+		System.out.println(s1 == s2); // true, 메모리 주소가 같다
 		String s3 = new String("1"); // 새로운 메모리를 만든다
-		System.out.println(s1 == s3); // 메모리 주소가 다르다
+		System.out.println(s1 == s3); // false, 메모리 주소가 다르다
 		String s4 = new String("1"); // 새로운 메모리를 만든다
-		System.out.println(s1 == s3); // 메모리 주소가 다르다
-		System.out.println(s1.equals(s4)); // 값을 비교한다
+		System.out.println(s1 == s3); // false, 메모리 주소가 다르다
+		System.out.println(s1.equals(s4)); // true, 값을 비교한다
 		
-		// 문자열 찾기 (-1을 리턴)
+		// 문자열 찾기 (없으면 -1을 리턴)
 		int idx = str.indexOf("3");
 		System.out.println(idx);
 		int idx2 = str.indexOf("6");
 		System.out.println(idx2);
 		
 		// 슬라이싱
-		String subStr = str.substring(1, 5);
+		String subStr = str.substring(1, 5); //1번 인덱스부터 (5-1)번 인덱스까지
 		System.out.println(subStr);
 		
 		// 문자열 대치
