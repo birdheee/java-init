@@ -1,4 +1,5 @@
 package p03;
+// 여기서 최소 세문제
 
 import java.util.Random;
 import java.util.Scanner;
