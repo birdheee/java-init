@@ -29,6 +29,5 @@ public class Exam {
 		
 		int priceSum = getFoodPriceSum(foodPrice, foodPrice2, foodPrice3, foodPrice4, foodPrice5);
 		System.out.print(priceSum);
-
 	}
 }
