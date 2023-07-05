@@ -14,11 +14,11 @@ public class RemoconExec {
 			remotes[i].on();
 			remotes[i].off();
 			if(remotes[i] instanceof AirconRemocon) {
-				AirconRemocon ar = (AirconRemocon)remotes[i]; // 캐스팅
-				ar.tempUp();
+				AirconRemocon ar = (AirconRemocon)remotes[i]; // 다운캐스팅
+				ar.tempUp(); // 호출 가능
 				ar.tempDown();
 			}else if(remotes[i] instanceof TVRemocon){
-				TVRemocon tr = (TVRemocon)remotes[i]; // 캐스팅
+				TVRemocon tr = (TVRemocon)remotes[i]; // 다운캐스팅
 				tr.chUp();
 				tr.chDown();
 			}
