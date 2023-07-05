@@ -7,7 +7,7 @@ public class RemoconExec {
 		 * 따라서 데이터 타입이 상위인 Remote 배열로 선언 가능
 		 * */
 		Remote[] remotes = new Remote[2];
-		remotes[0] = new AirconRemocon();
+		remotes[0] = new AirconRemocon(); // 업캐스팅
 		remotes[1] = new TVRemocon();
 		
 		for(int i=0; i<remotes.length; i++) {
