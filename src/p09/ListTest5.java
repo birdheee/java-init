@@ -14,6 +14,7 @@ public class ListTest5 {
 		numList.add(4);
 		int temp = 0;
 		
+		// Selection Sort
 		for(int i=0; i<numList.size(); i++) {
 			for(int j=i+1; j<numList.size(); j++) {
 				if(numList.get(i)>numList.get(j)) {

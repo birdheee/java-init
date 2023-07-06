@@ -9,7 +9,7 @@ public class ListTest2 {
 	public static void main(String[] args) {
 		
 //		numlist의 size가 20이 될 때 까지 랜덤 값을 1에서 100까지 저장
-//		단 중복 안됨
+//		단 중복 안됨 
 //		출력할 때 for문으로 출력
 //		숫자에 3,6,9가 포함되어 있는 경우 짝, 두개 포함되어 있는 경우 짝짝
 		List<Integer> numList = new ArrayList<>();

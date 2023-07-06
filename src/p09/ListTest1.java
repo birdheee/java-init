@@ -7,7 +7,7 @@ import java.util.Random;
 public class ListTest1 {
 
 	public static void main(String[] args) {
-		// 랜덤 값 정의
+		// 랜덤 값 정의 
 		List<Integer> numList = new ArrayList<>();
 		Random ra = new Random();
 		
