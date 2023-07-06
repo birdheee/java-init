@@ -30,11 +30,13 @@ public class ListTest4 {
 		int cnt = 0;
 		for(int i=0; i<numStr2.length; i++) {
 			int numInt = Integer.parseInt(numStr2[i]);
+//			중복값 세기
 //			for(int j=0; j<numList.size(); j++) {
 //				if(numList.get(j) == numInt) {
 //					cnt ++;
 //				}
 //			}
+			// 더 간단한 방법 !
 			if(numList.indexOf(numInt) != -1) {
 				cnt ++;
 			}
