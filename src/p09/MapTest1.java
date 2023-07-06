@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class MapTest {
+public class MapTest1 {
 	public static void main(String args[]) {
 		// map은 데이터를 정의하기 위해 사용함
 		// map은 다이아몬드에 key, value 두 개가 들어갈 수 있음
