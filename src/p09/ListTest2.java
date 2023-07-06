@@ -42,7 +42,7 @@ public class ListTest2 {
 		// Integer는 toString을 지원함
 		for(int i=0; i<numList.size(); i++) {
 			String numStr = numList.get(i).toString();
-			numStr = numStr.replace("3", "짝");
+			numStr = numStr.replace("3", "짝"); // 결과를 다시 저장해야 함
 			numStr = numStr.replace("6", "짝");
 			numStr = numStr.replace("9", "짝");
 			System.out.println(numStr);
