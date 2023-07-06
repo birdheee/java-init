@@ -2,6 +2,7 @@ package p09;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -45,6 +46,15 @@ public class Starbucks {
 		mapList.add(m3);
 		mapList.add(m4);
 		System.out.println(mapList);
+		
+		for(Map<String, String> map : mapList) {
+			Iterator<String> it = map.keySet().iterator();
+			while(it.hasNext()) {
+				String key = it.next();
+				System.out.println(key + " : " + map.get(key));
+			}
+			System.out.println();
+		}
 	}
 	
 }

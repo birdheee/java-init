@@ -2,6 +2,7 @@ package p09;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -40,6 +41,14 @@ public class Pokemon {
 		mapList.add(m1);
 		mapList.add(m2);
 		mapList.add(m3);
-		System.out.println(mapList);
+		
+		for(Map<String, String> map : mapList) {
+			Iterator<String> it = map.keySet().iterator();
+			while(it.hasNext()) {
+				String key = it.next();
+				System.out.println(key + " : " + map.get(key));
+			}
+			System.out.println();
+		}
 	}
 }
