@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class InsertTest {
 	public static void main(String[] args) {
-		// 예외처리를 강요함 !
+		// 예외처리를 강요함!
 		// 유심칩
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");

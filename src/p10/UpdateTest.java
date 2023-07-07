@@ -7,7 +7,6 @@ import java.sql.Statement;
 
 public class UpdateTest {
 	// update만 cell 기반임
-	
 	public static void main(String args[]) {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");

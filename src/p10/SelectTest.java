@@ -9,14 +9,9 @@ import java.sql.Statement;
 public class SelectTest {
 
 	public static void main(String[] args) {
-		try {
-			Class.forName("org.mariadb.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 		
 		try {
-			Connection con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/kd", "root", "kd1824java");
+			Connection con = DBCon.getCon(); // DBCon 클래스의 메소드 호출
 			String sql = "SELECT * FROM user_info";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql); // executeQuery의 데이터형은 ResultSet. ResultSet는 메타데이터와 실제데이터를 가지고 있음
