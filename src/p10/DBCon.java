@@ -21,7 +21,7 @@ public class DBCon {
 			e.printStackTrace();
 		}
 	}
-	
+	// 데이터베이스를 연결하는 메서드
 	public static Connection getCon() {
 		try {
 			Connection con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
