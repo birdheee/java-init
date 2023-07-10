@@ -42,4 +42,35 @@ public class UserInfoRepository {
 		}
 		return userInfos;
 	}
+	
+	public int insertUserInfo(Map<String, String> userInfo) {
+		Connection con = DBCon.getCon();
+		try {
+			Statement stmt = con.createStatement();
+			String sql = "INSERT INTO USER_INFO(UI_NAME, UI_ID, UI_PWD) ";
+			sql += " VALUES('" + userInfo.get("uiName") + 
+					"', '" + userInfo.get("uiId") + 
+					"', '" + userInfo.get("uiPwd") +
+					"')";
+			int resultCnt = stmt.executeUpdate(sql);
+			return resultCnt;
+ 		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
+	
+	public int deleteUserInfo(Map<String, String> userInfo) {
+		Connection con = DBCon.getCon();
+		try {
+			Statement stmt = con.createStatement();
+			String sql = "DELETE FROM user_info ";
+			sql += " WHERE UI_ID='" + userInfo.get("uiId") + "' AND UI_PWD='" + userInfo.get("uiPwd") + "'";
+			int resultCnt = stmt.executeUpdate(sql);
+			return resultCnt;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 }
