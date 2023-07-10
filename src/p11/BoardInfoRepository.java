@@ -90,6 +90,7 @@ public class BoardInfoRepository {
 	
 	public static void main(String args[]) {
 		BoardInfoRepository biRepo = new BoardInfoRepository();
+		
 		// select
 		List<Map<String, String>> boardInfoList = biRepo.getBoardInfoList();
 		for(Map<String, String> boardInfo : boardInfoList) {
