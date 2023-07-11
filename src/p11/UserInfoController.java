@@ -39,10 +39,10 @@ public class UserInfoController {
 //		System.out.println("반영된 행 개수 : " + userInfo);
 		
 		// delete
-		param.put("uiId", "TEST4");
-		param.put("uiPwd", "TEST4");
-		int userInfo = uiController.deleteUserInfo(param);
-		System.out.println("반영된 행 개수 : " + userInfo);
+//		param.put("uiId", "TEST4");
+//		param.put("uiPwd", "TEST4");
+//		int userInfo = uiController.deleteUserInfo(param);
+//		System.out.println("반영된 행 개수 : " + userInfo);
 		
 		// select
 		List<Map<String, String>> userInfoList = uiController.getUserInfoList(param);
